@@ -37,9 +37,9 @@
             <version>alpha-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.cognitionbox.petra</groupId>
+            <groupId>io.cognitionbox.petra</groupId>
             <artifactId>petra-verification</artifactId>
-            <version>alpha</version>
+            <version>alpha-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
