@@ -17,7 +17,7 @@
         <dependency>
             <groupId>io.cognitionbox.petra</groupId>
             <artifactId>petra-core</artifactId>
-            <version>alpha</version>
+            <version>alpha-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
