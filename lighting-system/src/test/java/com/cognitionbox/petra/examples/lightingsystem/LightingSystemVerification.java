@@ -14,7 +14,7 @@ public class LightingSystemVerification extends Verification {
 
     @Parameterized.Parameters(name = "{0}")
     public static Collection tasks() {
-        setRoot(TurnLightOn.class);
+        setRoot(ToggleLight.class);
         return Verification.tasks();
     }
 }
