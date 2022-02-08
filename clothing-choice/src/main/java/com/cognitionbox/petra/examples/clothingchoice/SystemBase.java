@@ -8,11 +8,11 @@ import com.cognitionbox.petra.annotations.Primative;
     DayAndWeather dayAndWeather();
 
     default boolean rainyWeekdayCoatClothing(){
-        return clothing().suit() && dayAndWeather().rainyWeekday();
+        return clothing().coat() && dayAndWeather().rainyWeekday();
     }
 
     default boolean rainyWeekendCoatClothing(){
-        return clothing().suit() && dayAndWeather().rainyWeekend();
+        return clothing().coat() && dayAndWeather().rainyWeekend();
     }
 
     default boolean plainWeekendTshirtClothing(){
