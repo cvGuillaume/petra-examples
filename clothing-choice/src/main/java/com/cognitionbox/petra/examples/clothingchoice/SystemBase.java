@@ -24,10 +24,16 @@ import com.cognitionbox.petra.annotations.Primative;
     }
 
     default boolean rainyWeekdaySmartJacketClothing(){
-        return clothing().smartJacket() && (dayAndWeather().rainyWeekday() && dayAndWeather().moderateWeekday());
+        return clothing().smartJacket() && dayAndWeather().rainyWeekday();
     }
 
     default boolean moderateWeekdayAnyClothing(){
         return dayAndWeather().moderateWeekday() && !clothing().undecided();
+    }
+
+    default void printChoice(){
+        System.out.println("is weekend?: "+dayAndWeather().day().weekend());
+        System.out.println("weather: "+dayAndWeather().weather().weatherEnum().get());
+        System.out.println("choice: "+clothing().choiceEnum().get());
     }
 }

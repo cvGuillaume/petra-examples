@@ -1,5 +1,5 @@
 package com.cognitionbox.petra.examples.clothingchoice;
 
 public enum ClothingEnum {
-    U, L, R, C, H;
+    UNDECIDED, SMART_JACKET, RAIN_COAT, T_SHIRT, HAT;
 }

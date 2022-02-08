@@ -49,7 +49,7 @@ import com.cognitionbox.petra.annotations.View;
     }
 
     default boolean rainyWeekdaySmartJacketClothing(){
-        return clothing().smartJacket() && (dayAndWeather().rainyWeekday() && dayAndWeather().moderateWeekday());
+        return clothing().smartJacket() && dayAndWeather().rainyWeekday();
     }
 
     default boolean moderateWeekdayAnyClothing(){
