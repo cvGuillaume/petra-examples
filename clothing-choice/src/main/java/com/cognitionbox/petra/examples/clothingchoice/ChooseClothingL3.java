@@ -12,38 +12,32 @@ public class ChooseClothingL3 implements Consumer<SystemL2> {
     @Override
     public void accept(SystemL2 s) {
         kases(s,
-                kase(system -> system.sunnyWeekdayUndecidedClothing(),
-                        system -> system.sunnyWeekdayHatClothing(),
-                        system -> {
-                            system.clothing().chooseHat();
-                            system.printChoice();
-                        }),
                 kase(system -> system.rainyWeekdayUndecidedClothing(),
-                        system -> system.rainyWeekdaySmartJacketClothing(),
+                        system -> system.rainyWeekdayCoatClothing(),
                         system -> {
-                            system.clothing().chooseSmartJacket();
+                            system.clothing().chooseCoat();
                             system.printChoice();
                         }),
-                kase(system -> system.moderateWeekdayUndecidedClothing(),
-                        system -> system.moderateWeekdayAnyClothing(),
+                kase(system -> system.rainyWeekendUndecidedClothing(),
+                        system -> system.rainyWeekendCoatClothing(),
                         system -> {
-                            system.clothing().chooseHat();
+                            system.clothing().chooseCoat();
                             system.printChoice();
                         }),
-                kase(system -> system.sunnyWeekendUndecidedClothing(),
-                        system -> system.sunnyWeekendTshirtClothing(),
+                kase(system -> system.plainWeekendUndecidedClothing(),
+                        system -> system.plainWeekendTshirtClothing(),
                         system -> {
                             system.clothing().chooseTshirt();
                             system.printChoice();
                         }),
-                kase(system -> system.rainyWeekendUndecidedClothing(),
-                        system -> system.rainyWeekendRainCoatClothing(),
+                kase(system -> system.notRainyWeekdayUndecidedClothing(),
+                        system -> system.notRainyWeekdaySuitClothing(),
                         system -> {
-                            system.clothing().chooseRainCoat();
+                            system.clothing().chooseSuit();
                             system.printChoice();
                         }),
-                kase(system -> system.moderateWeekendUndecidedClothing(),
-                        system -> system.moderateWeekendNotSmartJacketClothing(),
+                kase(system -> system.sunnyWeekendUndecidedClothing(),
+                        system -> system.sunnyWeekendHatClothing(),
                         system -> {
                             system.clothing().chooseHat();
                             system.printChoice();

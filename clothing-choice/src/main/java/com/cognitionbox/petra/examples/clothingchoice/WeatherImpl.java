@@ -3,9 +3,9 @@ package com.cognitionbox.petra.examples.clothingchoice;
 import com.cognitionbox.petra.lang.primitives.PValue;
 
 public class WeatherImpl implements Weather {
-    PValue<WeatherEnum> weather = new PValue<>();
+    PValue<WeatherEnum> weatherEnum = new PValue<>();
     @Override
     public PValue<WeatherEnum> weatherEnum() {
-        return weather;
+        return weatherEnum;
     }
 }
